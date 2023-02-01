@@ -1,0 +1,45 @@
+<%- include("partials/header") -%>
+
+<header>
+        <nav class="navbar sticky-top bg-body-tertiary">
+            <div class="container-fluid top-nav">
+                <a class="navbar-brand" href="#">
+                    <img id="brand-logo" src="images/brand-logo1.png" alt="Logo" class="d-inline-block align-text-top">
+                    <h1 id="brand-name">Chatter</h1>
+                </a>
+                <a class="leave btn btn-success me-4">Leave</a>
+            </div>
+        </nav>
+
+        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse">
+            <div class="position-sticky">
+                <div class="list-group list-group-flush mx-4 mt-4">
+
+                    <h3><i class="fas fa-comments"></i>Room name</h3>
+                    
+                    <h2 class="room-name">Gamers</h2>
+
+                    <div id="users">
+                        <h3><i class="fas fa-users"></i>Users</h3>
+                        <ul id="userList"></ul>
+                    </div>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="chat-messages"></div>
+        
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <div class="input-group">
+                    <input id="msg" type="text" class="form-control" placeholder="Enter Message" autocomplete="off"/>
+                    <button class="btn send" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+<%- include("partials/footer") -%>
